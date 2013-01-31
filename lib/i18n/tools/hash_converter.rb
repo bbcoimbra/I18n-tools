@@ -1,14 +1,20 @@
 module I18n
+
   module Tools
+
     class HashConverter
+
       def initialize(hash)
         @hash = hash
       end
+
       def to_s
         str = ""
         hash_to_str(@hash)
       end
+
       private
+
         def hash_to_str(hash, ret_str="")
           str = ret_str
           hash.keys.each do |key|
@@ -22,6 +28,9 @@ module I18n
           end
           str
         end
+
     end
+
   end
+
 end

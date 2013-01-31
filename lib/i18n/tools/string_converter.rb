@@ -1,6 +1,9 @@
 module I18n
+
   module Tools
+
     class StringConverter
+
       def initialize(str)
         @string = str
       end
@@ -10,5 +13,7 @@ module I18n
       end
 
     end
+
   end
+
 end
